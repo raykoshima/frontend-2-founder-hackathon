@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TERRATECH Payment</title>
+  <link rel="stylesheet" href="Payment.css" />
+</head>
+<body>
+
+  <div class="payment-container">
+
+    <h1 class="logo">TERRATECH</h1>
+    <h2 class="title">Payment</h2>
+
+    <textarea class="payment-description" readonly></textarea>
+
+    <form class="payment-form" action="#" method="post">
+
+      <fieldset class="credit-debit">
+        <legend>Credit/Debit Card</legend>
+
+        <input type="text" placeholder="Card Number" class="card-number" maxlength="19" />
+
+        <div class="expiry-cvv">
+          <input type="text" placeholder="MM/YY" class="expiry" maxlength="5" />
+          <input type="text" placeholder="CVV" class="cvv" maxlength="3" />
+        </div>
+      </fieldset>
+
+      <fieldset class="ewallet">
+        <legend>e-Wallet</legend>
+
+        <div class="ewallet-buttons">
+          <button type="button" class="ewallet-btn promptpay" title="PromptPay"></button>
+          <button type="button" class="ewallet-btn linepay" title="LINE Pay"></button>
+          <div class="empty-box"></div>
+        </div>
+      </fieldset>
+
+      <div class="room-number">Room 495</div>
+
+      <button type="submit" class="confirm-btn">Confirm Payment</button>
+      <button type="button" class="back-btn">Back</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('igma/ChatGPT\ Image\ 8\ ก.ย.\ 2568\ 07_52_12.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4d3712; /* สีน้ำตาล */
+}
+
+.payment-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 360px;
+  padding: 30px 25px 35px 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #a98722;
+  text-align: center;
+  position: relative;
+}
+
+
+/* Logo */
+.logo {
+  font-weight: 900;
+  font-size: 28px;
+  color: #bba455;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #4c3912;
+}
+
+/* Title */
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: black;
+}
+
+/* Textarea */
+.payment-description {
+  background-color: rgba(255, 255, 255, 0.25); /* ✅ โปร่งแสงหลักของกล่อง */
+  backdrop-filter: blur(12px); /* ✅ ทำให้พื้นหลังเบลอ + โปร่ง */
+  width: 100%;
+  height: 200px;
+  border: 1px solid #a98523;
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 24px;
+  padding: 10px;
+  font-size: 16px;
+  color: #4d3712;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Fieldsets */
+.payment-form fieldset {
+  border: none;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* Legends */
+.payment-form legend {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Card Number */
+.card-number {
+  width: 60%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #b69f53;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.25); /* ✅ โปร่งแสงหลักของกล่อง */
+  backdrop-filter: blur(12px); /* ✅ ทำให้พื้นหลังเบลอ + โปร่ง */
+  margin-bottom: 15px;
+  outline: none;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Expiry and CVV container */
+.expiry-cvv {
+  display: flex;
+  gap: 15px;
+}
+
+/* Expiry and CVV inputs */
+.expiry,
+.cvv {
+  width: 40px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #b69f53;
+  background-color: rgba(255, 255, 255, 0.25); /* ✅ โปร่งแสงหลักของกล่อง */
+  backdrop-filter: blur(12px); /* ✅ ทำให้พื้นหลังเบลอ + โปร่ง */
+  border-radius: 6px;
+  outline: none;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.expiry {
+  flex: 2;
+}
+
+.cvv {
+  flex: 1;
+}
+
+/* e-Wallet buttons container */
+.ewallet-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* e-Wallet buttons */
+.ewallet-btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+}
+
+/* PromptPay button background */
+.promptpay {
+  background-image: url('igma/PromptPay-logo.png');
+}
+
+/* LINE Pay button background */
+.linepay {
+  background-image: url('igma/image.png');
+}
+
+/* Empty box on right */
+.empty-box {
+  flex: 1;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.25); /* ✅ โปร่งแสงหลักของกล่อง */
+  backdrop-filter: blur(12px); /* ✅ ทำให้พื้นหลังเบลอ + โปร่ง */
+  border-radius: 6px;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Room number */
+.room-number {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #070500;
+  text-align: left;
+  padding-left: 3px;
+}
+
+/* Confirm Payment button */
+.confirm-btn {
+  background-color: #b99831;
+  border: none;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+}
+
+.confirm-btn:hover {
+  background-color: #9c8227;
+}
+
+/* Back button */
+.back-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+  display: block;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #5a3e12;
+}
