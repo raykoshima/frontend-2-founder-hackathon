@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TERRATECH</title>
+  <link rel="stylesheet" href="hotel.css" />
+</head>
+<body>
+  
+  <!-- Header: Logo + Navigation -->
+  <header class="header">
+    <h1 class="logo">TERRATECH</h1>
+    <nav class="top-nav">
+      <a href="#" class="active">Hotels</a>
+      <a href="#">Restaurants</a>
+      <a href="#">Room service</a>
+      <a href="#">Promotion</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar ทางซ้าย -->
+    <aside class="sidebar">
+
+      <div class="filter-group">
+<h3 style="font-size: 26px;">Type</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Standard</label>
+          <label><input type="checkbox" /> Superior</label>
+          <label><input type="checkbox" /> Delux</label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h3 style="font-size: 26px;">Price</h3>
+        <input type="range" min="0" max="5000" />
+      </div>
+
+      <div class="filter-group">
+        <h3 style="font-size: 26px;">Rating</h3>
+        <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="filter-group">
+        <h3 style="font-size: 26px;">Amenities</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" /> Pool</label>
+          <label><input type="checkbox" /> Rooftop Bar</label>
+          <label><input type="checkbox" /> Spa</label>
+        </div>
+      </div>
+
+      <button class="clear-filters">Clear filters</button>
+    </aside>
+
+    <!-- Main Content ด้านขวา -->
+    <main class="main-content">
+
+      <!-- Search Panel -->
+      <section class="search-panel">
+        <div class="search-row search-bar">
+          <input class="search-box" type="text" placeholder="Search Hotels" />
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div class="search-row">
+          <input class="location-box" type="text" placeholder="Location / City" />
+        </div>
+
+        <div class="search-row category-buttons">
+          <button><img src="imga/Image 8 ก.ย. 2568 06_43_29.png" alt="" /> Birthday</button>
+          <button><img src="imga/8 ก.ย. 2568 06_47_32.png" alt="" /> Dinner</button>
+          <button><img src="imga/8 ก.ย. 2568 06_54_43.png" alt="" /> Graduation</button>
+          <button><img src="imga/8 ก.ย. 2568 06_58_51.png" alt="" /> Room service</button>
+        </div>
+      </section>
+
+      <!-- Results Header -->
+      <section class="results-header">
+        <span class="results-count">495 results</span>
+        <div class="sort-box">
+          <label for="sort">Sort by :</label>
+          <select id="sort">
+            <option>Price</option>
+            <option>Rating</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Hotel Grid -->
+      <section class="hotel-grid">
+        <div class="hotel-card">
+          <img src="imga/ChatGPT Image 8 ก.ย. 2568 07_45_05.png" alt="Hotel 1" />
+          <div class="hotel-info">
+            <h4>The Golden Terra</h4>
+            <p>4,995 bath</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="hotel-card">
+          <img src="imga/ChatGPT Image 8 ก.ย. 2568 08_03_19.png" alt="Hotel 2" />
+          <div class="hotel-info">
+            <h4>Dhara Luxe</h4>
+            <p>4,995 bath</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="hotel-card">
+          <img src="imga/ChatGPT Image 8 ก.ย. 2568 08_08_53.png" alt="Hotel 3" />
+          <div class="hotel-info">
+            <h4>Suwan Tara Hotel</h4>
+            <p>4,995 bath</p>
+            <button>View Details</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>

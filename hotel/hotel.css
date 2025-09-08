@@ -1,0 +1,349 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7eed4;
+  color: #7f7153;
+}
+
+/* Header: logo + nav */
+/* แก้ระยะห่างโลโก้กับเมนู navigation */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 30px 40px 15px 40px;
+  gap: 80px; /* เพิ่มจาก 40px เป็น 80px */
+}
+
+/* ปรับปุ่ม Clear filters ให้อยู่ด้านขวาบนของ sidebar */
+.clear-filters {
+  padding: 8px 14px;
+  background-color: #6c5e3e;
+  color: #d6cba1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 2px 2px 5px rgba(98, 83, 53, 0.8);
+  transition: background-color 0.3s ease;
+
+  /* เพิ่ม */
+  margin-left: auto;  /* ขยับไปขวาสุด */
+  display: block;
+  width: max-content; /* ให้ความกว้างพอดีเนื้อหา */
+}
+
+
+.clear-filters:hover {
+  background-color: #5a4e31;
+}
+
+
+.logo {
+  font-size: 45px;
+  font-weight: 600;
+  color: #b8a67d;
+  letter-spacing: 2px;
+  filter: drop-shadow(2px 2px 2px #d3c8a2);
+}
+
+.top-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #7f7153;
+  position: relative;
+  padding-bottom: 4px;
+  font-weight: 500;
+}
+
+.top-nav a.active {
+  color: #866f36;
+}
+
+.top-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #866f36;
+  border-radius: 2px;
+}
+
+/* Container หลัก */
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 40px 40px 40px;
+  gap: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #f9f3de;
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 4px 6px 15px rgba(176, 162, 122, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  font-weight: 600;
+  color: #998e73;
+}
+
+/* Filter group titles */
+.filter-group h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Checkbox group container with subtle background */
+.checkbox-group {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 15px;
+  box-shadow: inset 2px 2px 6px #dddcd1, inset -2px -2px 6px #f6f4e6;
+}
+
+.checkbox-group label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #7f7153;
+  cursor: pointer;
+}
+
+.filter-group:not(:last-child) {
+  border-bottom: 1px solid #d6ceaf;
+  padding-bottom: 20px;
+}
+
+.stars {
+  font-size: 20px;
+  color: #b18e34;
+}
+
+/* Clear Filters Button */
+.clear-filters {
+  padding: 8px 14px;
+  background-color: #6c5e3e;
+  color: #d6cba1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  align-self: flex-start;
+  box-shadow: 2px 2px 5px rgba(98, 83, 53, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.clear-filters:hover {
+  background-color: #5a4e31;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+/* Search Panel */
+.search-panel {
+  background-color: #f9f2d8;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 6px 6px 15px rgba(187, 178, 148, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-box{
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #d5c4a1;
+  border-radius: 5px;
+}
+
+.location-box {
+  width: 400px; /* กำหนดความกว้างตามที่ต้องการ */
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #d5c4a1;
+  border-radius: 5px;
+  /* ถ้ากำหนด width ตรงๆ อาจต้องลบ flex:1 ออก */
+}
+
+
+.search-box::placeholder,
+.location-box::placeholder {
+  color: #b6ad8c;
+  font-weight: 500;
+}
+
+.search-btn {
+  background-color: #b4a36a;
+  color: white;
+  border: none;
+  padding: 12px 50px;
+  border-radius: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #8f7e3f;
+}
+
+/* Category Buttons */
+.category-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-buttons button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid #c8b998;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #998e73;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #f0e7c4;
+}
+
+.category-buttons img {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0.4);
+}
+
+/* Results Header */
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.results-count {
+  font-weight: 700;
+  color: #998e73;
+  font-size: 16px;
+}
+
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #8c7f59;
+  font-size: 14px;
+}
+
+.sort-box select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #c1b994;
+  background-color: #f8f3d9;
+  cursor: pointer;
+  font-weight: 600;
+  color: #7f7153;
+}
+
+/* Hotel Grid */
+.hotel-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 220px;
+  background: linear-gradient(to top, #b3a87c, #f1e9c8);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 4px 5px 9px rgba(122, 109, 64, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.hotel-info {
+  padding: 12px 16px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #554f3d;
+}
+
+.hotel-info h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.hotel-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #6f694d;
+}
+
+.hotel-info button {
+  background-color: #d4c494;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  color: #6f6341;
+}
+
+.hotel-info button:hover {
+  background-color: #b8a955;
+}
