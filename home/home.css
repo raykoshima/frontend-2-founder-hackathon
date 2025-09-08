@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fdf3e2;
+  color: #2b1e0f;
+}
+
+header {
+  position: relative;
+  background: url('imga/hotel_resized_1440x344.png') center/cover no-repeat;
+  height: 290px;
+  padding: 25px 40px;
+  color: #d3b25a;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+  z-index: 1;
+}
+
+header h1 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 600;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+.header-controls {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: #f6e8d2;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 800px;
+  height: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  background: none;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #b79c5e;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #a4853d;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 100px; /* ระยะห่างระหว่างกล่อง */
+  justify-content: center; /* จัดกึ่งกลาง */
+  margin: 25px 0; /* เว้นขอบบนล่าง */
+}
+
+.tab-bar span {
+  background-color: #e2d0a3; /* สีพื้นหลัง */
+  padding: 15px 50px; /* ขนาดกล่อง */
+  border-radius: 12px; /* ขอบมน */
+  font-size: 30px; /* ขนาดตัวอักษร */
+  font-weight: 500;
+  color: #1d1405; /* สีตัวอักษร */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* เงา */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tab-bar span:hover {
+  background-color: #b78d24;     /* สีพื้นหลังตอน hover */
+  color: #fff;                   /* เปลี่ยนสีตัวหนังสือให้ตัดกับพื้นหลัง */
+  box-shadow: 0 0 0 2px #f3c765;
+}
+
+
+
+/* CATEGORY TABS */
+.category-tabs {
+  background-color: #e2d4af;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: center; /* ✅ กระจุกปุ่มไว้ตรงกลาง */
+  align-items: center;
+  gap: 150px; /* ✅ ระยะห่างระหว่างปุ่ม */
+}
+
+
+.category-tab {
+  background-color: #e2d0a3;
+  padding: 5px 50px;      /* เพิ่มความสูง/ความกว้างของกล่อง */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 35px;         /* เพิ่มขนาดตัวอักษร */
+  font-weight: 500;
+  color: #1d1405;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  
+}
+
+.category-tab img {
+  width: 100px;
+  height: 100px;
+}
+
+.category-tab.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.category-tab:hover {
+  background-color: #d1b46a; /* สีที่คุณต้องการเมื่อ hover */
+  color: #fff; /* ตัวอักษรสีขาวให้อ่านง่ายบนพื้นเข้ม */
+}
+
+
+/* HOTEL SECTION */
+.hotel-section {
+  padding: 30px 40px;
+}
+
+.hotel-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hotel-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.hotel-card {
+  flex: 1;
+  min-height: 230px;
+  background: linear-gradient(to top, #c5b083, #e2d4af);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.hotel-label {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5e4b6;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
